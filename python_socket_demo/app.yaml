@@ -1,9 +1,13 @@
-application: your-app-id
+application: palladius-sockets-python-demo
 version: one
 runtime: python27
 api_version: 1
 threadsafe: false
 
+env_variables:
+ ENV_COMESEFOSSE_RAILS: production
+ # For httplib, see https://developers.google.com/appengine/docs/python/sockets/
+ GAE_USE_SOCKETS_HTTPLIB: 'anyvalue'
 handlers:
 
 - url: .*
